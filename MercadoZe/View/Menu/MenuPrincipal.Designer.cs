@@ -30,32 +30,32 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             groupBox1 = new GroupBox();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            btn_DeletarCliente = new Button();
+            btn_BuscarCliente = new Button();
+            btn_AlterarCliente = new Button();
+            btn_CadastroCliente = new Button();
             groupBox2 = new GroupBox();
-            button5 = new Button();
-            button8 = new Button();
-            button6 = new Button();
-            button7 = new Button();
+            btn_DeletarFunci = new Button();
+            btn_CadastroFunci = new Button();
+            btn_BuscarFunci = new Button();
+            btn_AlterarFunci = new Button();
             groupBox3 = new GroupBox();
-            button9 = new Button();
-            button12 = new Button();
-            button10 = new Button();
-            button11 = new Button();
+            btn_DeletarPedido = new Button();
+            btn_CadastroPedido = new Button();
+            btn_BuscarPedido = new Button();
+            btn_AlterarPedido = new Button();
             groupBox4 = new GroupBox();
-            button13 = new Button();
-            button16 = new Button();
-            button14 = new Button();
-            button15 = new Button();
+            btn_DeletarProduto = new Button();
+            btn_CadastrarProduto = new Button();
+            btn_BuscarProduto = new Button();
+            btn_AlterarProduto = new Button();
             groupBox5 = new GroupBox();
-            button17 = new Button();
-            button20 = new Button();
-            button18 = new Button();
-            button19 = new Button();
+            btn_DeletarUsuario = new Button();
+            btn_CadastrarUsuario = new Button();
+            btn_BuscarUsuario = new Button();
+            btn_AlterarUsuario = new Button();
             pictureBox1 = new PictureBox();
-            button21 = new Button();
+            btn_Sair = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -67,10 +67,10 @@
             // groupBox1
             // 
             groupBox1.BackColor = Color.Transparent;
-            groupBox1.Controls.Add(button4);
-            groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(button2);
-            groupBox1.Controls.Add(button1);
+            groupBox1.Controls.Add(btn_DeletarCliente);
+            groupBox1.Controls.Add(btn_BuscarCliente);
+            groupBox1.Controls.Add(btn_AlterarCliente);
+            groupBox1.Controls.Add(btn_CadastroCliente);
             groupBox1.Font = new Font("Caviar Dreams", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             groupBox1.Location = new Point(13, 138);
             groupBox1.Name = "groupBox1";
@@ -79,54 +79,57 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Clientes";
             // 
-            // button4
+            // btn_DeletarCliente
             // 
-            button4.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.Location = new Point(6, 225);
-            button4.Name = "button4";
-            button4.Size = new Size(180, 54);
-            button4.TabIndex = 3;
-            button4.Text = "Deletar Cliente";
-            button4.UseVisualStyleBackColor = true;
+            btn_DeletarCliente.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_DeletarCliente.Location = new Point(6, 225);
+            btn_DeletarCliente.Name = "btn_DeletarCliente";
+            btn_DeletarCliente.Size = new Size(180, 54);
+            btn_DeletarCliente.TabIndex = 3;
+            btn_DeletarCliente.Text = "Deletar Cliente";
+            btn_DeletarCliente.UseVisualStyleBackColor = true;
+            btn_DeletarCliente.Click += btn_DeletarCliente_Click;
             // 
-            // button3
+            // btn_BuscarCliente
             // 
-            button3.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.Location = new Point(6, 164);
-            button3.Name = "button3";
-            button3.Size = new Size(180, 54);
-            button3.TabIndex = 2;
-            button3.Text = "Buscar Cliente";
-            button3.UseVisualStyleBackColor = true;
+            btn_BuscarCliente.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_BuscarCliente.Location = new Point(6, 164);
+            btn_BuscarCliente.Name = "btn_BuscarCliente";
+            btn_BuscarCliente.Size = new Size(180, 54);
+            btn_BuscarCliente.TabIndex = 2;
+            btn_BuscarCliente.Text = "Buscar Cliente";
+            btn_BuscarCliente.UseVisualStyleBackColor = true;
+            btn_BuscarCliente.Click += btn_BuscarCliente_Click;
             // 
-            // button2
+            // btn_AlterarCliente
             // 
-            button2.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(6, 103);
-            button2.Name = "button2";
-            button2.Size = new Size(180, 54);
-            button2.TabIndex = 1;
-            button2.Text = "Alterar Cliente";
-            button2.UseVisualStyleBackColor = true;
+            btn_AlterarCliente.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_AlterarCliente.Location = new Point(6, 103);
+            btn_AlterarCliente.Name = "btn_AlterarCliente";
+            btn_AlterarCliente.Size = new Size(180, 54);
+            btn_AlterarCliente.TabIndex = 1;
+            btn_AlterarCliente.Text = "Alterar Cliente";
+            btn_AlterarCliente.UseVisualStyleBackColor = true;
+            btn_AlterarCliente.Click += btn_AlterarCliente_Click;
             // 
-            // button1
+            // btn_CadastroCliente
             // 
-            button1.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(6, 42);
-            button1.Name = "button1";
-            button1.Size = new Size(180, 54);
-            button1.TabIndex = 0;
-            button1.Text = "Cadastrar Cliente";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btn_CadastroCliente.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_CadastroCliente.Location = new Point(6, 42);
+            btn_CadastroCliente.Name = "btn_CadastroCliente";
+            btn_CadastroCliente.Size = new Size(180, 54);
+            btn_CadastroCliente.TabIndex = 0;
+            btn_CadastroCliente.Text = "Cadastrar Cliente";
+            btn_CadastroCliente.UseVisualStyleBackColor = true;
+            btn_CadastroCliente.Click += btn_CadastroCliente_Click;
             // 
             // groupBox2
             // 
             groupBox2.BackColor = Color.Transparent;
-            groupBox2.Controls.Add(button5);
-            groupBox2.Controls.Add(button8);
-            groupBox2.Controls.Add(button6);
-            groupBox2.Controls.Add(button7);
+            groupBox2.Controls.Add(btn_DeletarFunci);
+            groupBox2.Controls.Add(btn_CadastroFunci);
+            groupBox2.Controls.Add(btn_BuscarFunci);
+            groupBox2.Controls.Add(btn_AlterarFunci);
             groupBox2.Font = new Font("Caviar Dreams", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             groupBox2.Location = new Point(217, 138);
             groupBox2.Name = "groupBox2";
@@ -135,54 +138,57 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Funcionários";
             // 
-            // button5
+            // btn_DeletarFunci
             // 
-            button5.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button5.Location = new Point(6, 225);
-            button5.Name = "button5";
-            button5.Size = new Size(180, 54);
-            button5.TabIndex = 7;
-            button5.Text = "Deletar Funcionário";
-            button5.UseVisualStyleBackColor = true;
+            btn_DeletarFunci.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_DeletarFunci.Location = new Point(6, 225);
+            btn_DeletarFunci.Name = "btn_DeletarFunci";
+            btn_DeletarFunci.Size = new Size(180, 54);
+            btn_DeletarFunci.TabIndex = 7;
+            btn_DeletarFunci.Text = "Deletar Funcionário";
+            btn_DeletarFunci.UseVisualStyleBackColor = true;
+            btn_DeletarFunci.Click += btn_DeletarFunci_Click;
             // 
-            // button8
+            // btn_CadastroFunci
             // 
-            button8.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button8.Location = new Point(6, 42);
-            button8.Name = "button8";
-            button8.Size = new Size(180, 54);
-            button8.TabIndex = 4;
-            button8.Text = "Cadastrar Funcionário";
-            button8.UseVisualStyleBackColor = true;
-            button8.Click += button8_Click;
+            btn_CadastroFunci.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_CadastroFunci.Location = new Point(6, 42);
+            btn_CadastroFunci.Name = "btn_CadastroFunci";
+            btn_CadastroFunci.Size = new Size(180, 54);
+            btn_CadastroFunci.TabIndex = 4;
+            btn_CadastroFunci.Text = "Cadastrar Funcionário";
+            btn_CadastroFunci.UseVisualStyleBackColor = true;
+            btn_CadastroFunci.Click += btn_CadastroFunci_Click;
             // 
-            // button6
+            // btn_BuscarFunci
             // 
-            button6.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button6.Location = new Point(6, 164);
-            button6.Name = "button6";
-            button6.Size = new Size(180, 54);
-            button6.TabIndex = 6;
-            button6.Text = "Buscar Funcionário";
-            button6.UseVisualStyleBackColor = true;
+            btn_BuscarFunci.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_BuscarFunci.Location = new Point(6, 164);
+            btn_BuscarFunci.Name = "btn_BuscarFunci";
+            btn_BuscarFunci.Size = new Size(180, 54);
+            btn_BuscarFunci.TabIndex = 6;
+            btn_BuscarFunci.Text = "Buscar Funcionário";
+            btn_BuscarFunci.UseVisualStyleBackColor = true;
+            btn_BuscarFunci.Click += btn_BuscarFunci_Click;
             // 
-            // button7
+            // btn_AlterarFunci
             // 
-            button7.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button7.Location = new Point(6, 103);
-            button7.Name = "button7";
-            button7.Size = new Size(180, 54);
-            button7.TabIndex = 5;
-            button7.Text = "Alterar Funcionário";
-            button7.UseVisualStyleBackColor = true;
+            btn_AlterarFunci.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_AlterarFunci.Location = new Point(6, 103);
+            btn_AlterarFunci.Name = "btn_AlterarFunci";
+            btn_AlterarFunci.Size = new Size(180, 54);
+            btn_AlterarFunci.TabIndex = 5;
+            btn_AlterarFunci.Text = "Alterar Funcionário";
+            btn_AlterarFunci.UseVisualStyleBackColor = true;
+            btn_AlterarFunci.Click += btn_AlterarFunci_Click;
             // 
             // groupBox3
             // 
             groupBox3.BackColor = Color.Transparent;
-            groupBox3.Controls.Add(button9);
-            groupBox3.Controls.Add(button12);
-            groupBox3.Controls.Add(button10);
-            groupBox3.Controls.Add(button11);
+            groupBox3.Controls.Add(btn_DeletarPedido);
+            groupBox3.Controls.Add(btn_CadastroPedido);
+            groupBox3.Controls.Add(btn_BuscarPedido);
+            groupBox3.Controls.Add(btn_AlterarPedido);
             groupBox3.Font = new Font("Caviar Dreams", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             groupBox3.Location = new Point(421, 138);
             groupBox3.Name = "groupBox3";
@@ -191,54 +197,57 @@
             groupBox3.TabStop = false;
             groupBox3.Text = "Pedidos";
             // 
-            // button9
+            // btn_DeletarPedido
             // 
-            button9.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button9.Location = new Point(6, 225);
-            button9.Name = "button9";
-            button9.Size = new Size(180, 54);
-            button9.TabIndex = 11;
-            button9.Text = "Deletar Pedido";
-            button9.UseVisualStyleBackColor = true;
+            btn_DeletarPedido.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_DeletarPedido.Location = new Point(6, 225);
+            btn_DeletarPedido.Name = "btn_DeletarPedido";
+            btn_DeletarPedido.Size = new Size(180, 54);
+            btn_DeletarPedido.TabIndex = 11;
+            btn_DeletarPedido.Text = "Deletar Pedido";
+            btn_DeletarPedido.UseVisualStyleBackColor = true;
+            btn_DeletarPedido.Click += btn_DeletarPedido_Click;
             // 
-            // button12
+            // btn_CadastroPedido
             // 
-            button12.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button12.Location = new Point(6, 42);
-            button12.Name = "button12";
-            button12.Size = new Size(180, 54);
-            button12.TabIndex = 8;
-            button12.Text = "Cadastrar Pedido";
-            button12.UseVisualStyleBackColor = true;
-            button12.Click += button12_Click;
+            btn_CadastroPedido.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_CadastroPedido.Location = new Point(6, 42);
+            btn_CadastroPedido.Name = "btn_CadastroPedido";
+            btn_CadastroPedido.Size = new Size(180, 54);
+            btn_CadastroPedido.TabIndex = 8;
+            btn_CadastroPedido.Text = "Cadastrar Pedido";
+            btn_CadastroPedido.UseVisualStyleBackColor = true;
+            btn_CadastroPedido.Click += btn_CadastroPedido_Click;
             // 
-            // button10
+            // btn_BuscarPedido
             // 
-            button10.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button10.Location = new Point(6, 164);
-            button10.Name = "button10";
-            button10.Size = new Size(180, 54);
-            button10.TabIndex = 10;
-            button10.Text = "Buscar Pedido";
-            button10.UseVisualStyleBackColor = true;
+            btn_BuscarPedido.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_BuscarPedido.Location = new Point(6, 164);
+            btn_BuscarPedido.Name = "btn_BuscarPedido";
+            btn_BuscarPedido.Size = new Size(180, 54);
+            btn_BuscarPedido.TabIndex = 10;
+            btn_BuscarPedido.Text = "Buscar Pedido";
+            btn_BuscarPedido.UseVisualStyleBackColor = true;
+            btn_BuscarPedido.Click += btn_BuscarPedido_Click;
             // 
-            // button11
+            // btn_AlterarPedido
             // 
-            button11.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button11.Location = new Point(6, 103);
-            button11.Name = "button11";
-            button11.Size = new Size(180, 54);
-            button11.TabIndex = 9;
-            button11.Text = "Alterar Pedido";
-            button11.UseVisualStyleBackColor = true;
+            btn_AlterarPedido.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_AlterarPedido.Location = new Point(6, 103);
+            btn_AlterarPedido.Name = "btn_AlterarPedido";
+            btn_AlterarPedido.Size = new Size(180, 54);
+            btn_AlterarPedido.TabIndex = 9;
+            btn_AlterarPedido.Text = "Alterar Pedido";
+            btn_AlterarPedido.UseVisualStyleBackColor = true;
+            btn_AlterarPedido.Click += btn_AlterarPedido_Click;
             // 
             // groupBox4
             // 
             groupBox4.BackColor = Color.Transparent;
-            groupBox4.Controls.Add(button13);
-            groupBox4.Controls.Add(button16);
-            groupBox4.Controls.Add(button14);
-            groupBox4.Controls.Add(button15);
+            groupBox4.Controls.Add(btn_DeletarProduto);
+            groupBox4.Controls.Add(btn_CadastrarProduto);
+            groupBox4.Controls.Add(btn_BuscarProduto);
+            groupBox4.Controls.Add(btn_AlterarProduto);
             groupBox4.Font = new Font("Caviar Dreams", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             groupBox4.Location = new Point(625, 138);
             groupBox4.Name = "groupBox4";
@@ -247,54 +256,57 @@
             groupBox4.TabStop = false;
             groupBox4.Text = "Produtos";
             // 
-            // button13
+            // btn_DeletarProduto
             // 
-            button13.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button13.Location = new Point(6, 225);
-            button13.Name = "button13";
-            button13.Size = new Size(180, 54);
-            button13.TabIndex = 15;
-            button13.Text = "Deletar Produto";
-            button13.UseVisualStyleBackColor = true;
+            btn_DeletarProduto.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_DeletarProduto.Location = new Point(6, 225);
+            btn_DeletarProduto.Name = "btn_DeletarProduto";
+            btn_DeletarProduto.Size = new Size(180, 54);
+            btn_DeletarProduto.TabIndex = 15;
+            btn_DeletarProduto.Text = "Deletar Produto";
+            btn_DeletarProduto.UseVisualStyleBackColor = true;
+            btn_DeletarProduto.Click += btn_DeletarProduto_Click;
             // 
-            // button16
+            // btn_CadastrarProduto
             // 
-            button16.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button16.Location = new Point(6, 42);
-            button16.Name = "button16";
-            button16.Size = new Size(180, 54);
-            button16.TabIndex = 12;
-            button16.Text = "Cadastrar Produto";
-            button16.UseVisualStyleBackColor = true;
-            button16.Click += button16_Click;
+            btn_CadastrarProduto.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_CadastrarProduto.Location = new Point(6, 42);
+            btn_CadastrarProduto.Name = "btn_CadastrarProduto";
+            btn_CadastrarProduto.Size = new Size(180, 54);
+            btn_CadastrarProduto.TabIndex = 12;
+            btn_CadastrarProduto.Text = "Cadastrar Produto";
+            btn_CadastrarProduto.UseVisualStyleBackColor = true;
+            btn_CadastrarProduto.Click += btn_CadastrarProduto_Click;
             // 
-            // button14
+            // btn_BuscarProduto
             // 
-            button14.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button14.Location = new Point(6, 164);
-            button14.Name = "button14";
-            button14.Size = new Size(180, 54);
-            button14.TabIndex = 14;
-            button14.Text = "Buscar Produto";
-            button14.UseVisualStyleBackColor = true;
+            btn_BuscarProduto.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_BuscarProduto.Location = new Point(6, 164);
+            btn_BuscarProduto.Name = "btn_BuscarProduto";
+            btn_BuscarProduto.Size = new Size(180, 54);
+            btn_BuscarProduto.TabIndex = 14;
+            btn_BuscarProduto.Text = "Buscar Produto";
+            btn_BuscarProduto.UseVisualStyleBackColor = true;
+            btn_BuscarProduto.Click += btn_BuscarProduto_Click;
             // 
-            // button15
+            // btn_AlterarProduto
             // 
-            button15.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button15.Location = new Point(6, 103);
-            button15.Name = "button15";
-            button15.Size = new Size(180, 54);
-            button15.TabIndex = 13;
-            button15.Text = "Alterar Produto";
-            button15.UseVisualStyleBackColor = true;
+            btn_AlterarProduto.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_AlterarProduto.Location = new Point(6, 103);
+            btn_AlterarProduto.Name = "btn_AlterarProduto";
+            btn_AlterarProduto.Size = new Size(180, 54);
+            btn_AlterarProduto.TabIndex = 13;
+            btn_AlterarProduto.Text = "Alterar Produto";
+            btn_AlterarProduto.UseVisualStyleBackColor = true;
+            btn_AlterarProduto.Click += btn_AlterarProduto_Click;
             // 
             // groupBox5
             // 
             groupBox5.BackColor = Color.Transparent;
-            groupBox5.Controls.Add(button17);
-            groupBox5.Controls.Add(button20);
-            groupBox5.Controls.Add(button18);
-            groupBox5.Controls.Add(button19);
+            groupBox5.Controls.Add(btn_DeletarUsuario);
+            groupBox5.Controls.Add(btn_CadastrarUsuario);
+            groupBox5.Controls.Add(btn_BuscarUsuario);
+            groupBox5.Controls.Add(btn_AlterarUsuario);
             groupBox5.Font = new Font("Caviar Dreams", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             groupBox5.Location = new Point(829, 138);
             groupBox5.Name = "groupBox5";
@@ -303,46 +315,49 @@
             groupBox5.TabStop = false;
             groupBox5.Text = "Usuário";
             // 
-            // button17
+            // btn_DeletarUsuario
             // 
-            button17.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button17.Location = new Point(6, 225);
-            button17.Name = "button17";
-            button17.Size = new Size(180, 54);
-            button17.TabIndex = 19;
-            button17.Text = "Deletar Usuário";
-            button17.UseVisualStyleBackColor = true;
+            btn_DeletarUsuario.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_DeletarUsuario.Location = new Point(6, 225);
+            btn_DeletarUsuario.Name = "btn_DeletarUsuario";
+            btn_DeletarUsuario.Size = new Size(180, 54);
+            btn_DeletarUsuario.TabIndex = 19;
+            btn_DeletarUsuario.Text = "Deletar Usuário";
+            btn_DeletarUsuario.UseVisualStyleBackColor = true;
+            btn_DeletarUsuario.Click += btn_DeletarUsuario_Click;
             // 
-            // button20
+            // btn_CadastrarUsuario
             // 
-            button20.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button20.Location = new Point(6, 42);
-            button20.Name = "button20";
-            button20.Size = new Size(180, 54);
-            button20.TabIndex = 16;
-            button20.Text = "Cadastrar Usuário";
-            button20.UseVisualStyleBackColor = true;
-            button20.Click += button20_Click;
+            btn_CadastrarUsuario.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_CadastrarUsuario.Location = new Point(6, 42);
+            btn_CadastrarUsuario.Name = "btn_CadastrarUsuario";
+            btn_CadastrarUsuario.Size = new Size(180, 54);
+            btn_CadastrarUsuario.TabIndex = 16;
+            btn_CadastrarUsuario.Text = "Cadastrar Usuário";
+            btn_CadastrarUsuario.UseVisualStyleBackColor = true;
+            btn_CadastrarUsuario.Click += btn_CadastrarUsuario_Click;
             // 
-            // button18
+            // btn_BuscarUsuario
             // 
-            button18.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button18.Location = new Point(6, 164);
-            button18.Name = "button18";
-            button18.Size = new Size(180, 54);
-            button18.TabIndex = 18;
-            button18.Text = "Buscar Usuário";
-            button18.UseVisualStyleBackColor = true;
+            btn_BuscarUsuario.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_BuscarUsuario.Location = new Point(6, 164);
+            btn_BuscarUsuario.Name = "btn_BuscarUsuario";
+            btn_BuscarUsuario.Size = new Size(180, 54);
+            btn_BuscarUsuario.TabIndex = 18;
+            btn_BuscarUsuario.Text = "Buscar Usuário";
+            btn_BuscarUsuario.UseVisualStyleBackColor = true;
+            btn_BuscarUsuario.Click += btn_BuscarUsuario_Click;
             // 
-            // button19
+            // btn_AlterarUsuario
             // 
-            button19.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button19.Location = new Point(6, 103);
-            button19.Name = "button19";
-            button19.Size = new Size(180, 54);
-            button19.TabIndex = 17;
-            button19.Text = "Alterar Usuário";
-            button19.UseVisualStyleBackColor = true;
+            btn_AlterarUsuario.Font = new Font("Caviar Dreams", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_AlterarUsuario.Location = new Point(6, 103);
+            btn_AlterarUsuario.Name = "btn_AlterarUsuario";
+            btn_AlterarUsuario.Size = new Size(180, 54);
+            btn_AlterarUsuario.TabIndex = 17;
+            btn_AlterarUsuario.Text = "Alterar Usuário";
+            btn_AlterarUsuario.UseVisualStyleBackColor = true;
+            btn_AlterarUsuario.Click += btn_AlterarUsuario_Click;
             // 
             // pictureBox1
             // 
@@ -355,16 +370,16 @@
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
-            // button21
+            // btn_Sair
             // 
-            button21.Font = new Font("Caviar Dreams", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button21.Location = new Point(467, 449);
-            button21.Name = "button21";
-            button21.Size = new Size(112, 40);
-            button21.TabIndex = 6;
-            button21.Text = "Sair";
-            button21.UseVisualStyleBackColor = true;
-            button21.Click += button21_Click;
+            btn_Sair.Font = new Font("Caviar Dreams", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_Sair.Location = new Point(467, 449);
+            btn_Sair.Name = "btn_Sair";
+            btn_Sair.Size = new Size(112, 40);
+            btn_Sair.TabIndex = 6;
+            btn_Sair.Text = "Sair";
+            btn_Sair.UseVisualStyleBackColor = true;
+            btn_Sair.Click += btn_Sair_Click;
             // 
             // MenuPrincipal
             // 
@@ -373,15 +388,19 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1035, 501);
-            Controls.Add(button21);
+            ControlBox = false;
+            Controls.Add(btn_Sair);
             Controls.Add(pictureBox1);
             Controls.Add(groupBox5);
             Controls.Add(groupBox4);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "MenuPrincipal";
-            Text = "MenuPrincipal";
+            ShowIcon = false;
+            Text = "Menu Principal";
             groupBox1.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
             groupBox3.ResumeLayout(false);
@@ -394,31 +413,31 @@
         #endregion
 
         private GroupBox groupBox1;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button1;
+        private Button btn_DeletarCliente;
+        private Button btn_BuscarCliente;
+        private Button btn_AlterarCliente;
+        private Button btn_CadastroCliente;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
         private GroupBox groupBox4;
         private GroupBox groupBox5;
-        private Button button5;
-        private Button button8;
-        private Button button6;
-        private Button button7;
-        private Button button9;
-        private Button button12;
-        private Button button10;
-        private Button button11;
-        private Button button13;
-        private Button button16;
-        private Button button14;
-        private Button button15;
-        private Button button17;
-        private Button button20;
-        private Button button18;
-        private Button button19;
+        private Button btn_DeletarFunci;
+        private Button btn_CadastroFunci;
+        private Button btn_BuscarFunci;
+        private Button btn_AlterarFunci;
+        private Button btn_DeletarPedido;
+        private Button btn_CadastroPedido;
+        private Button btn_BuscarPedido;
+        private Button btn_AlterarPedido;
+        private Button btn_DeletarProduto;
+        private Button btn_CadastrarProduto;
+        private Button btn_BuscarProduto;
+        private Button btn_AlterarProduto;
+        private Button btn_DeletarUsuario;
+        private Button btn_CadastrarUsuario;
+        private Button btn_BuscarUsuario;
+        private Button btn_AlterarUsuario;
         private PictureBox pictureBox1;
-        private Button button21;
+        private Button btn_Sair;
     }
 }

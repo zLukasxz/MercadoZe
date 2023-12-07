@@ -114,10 +114,10 @@
             // mtxb_telefone
             // 
             mtxb_telefone.Font = new Font("Caviar Dreams", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            mtxb_telefone.Location = new Point(465, 324);
+            mtxb_telefone.Location = new Point(451, 324);
             mtxb_telefone.Mask = "(99) 0000-0000";
             mtxb_telefone.Name = "mtxb_telefone";
-            mtxb_telefone.Size = new Size(105, 26);
+            mtxb_telefone.Size = new Size(133, 26);
             mtxb_telefone.TabIndex = 8;
             // 
             // pictureBox1
